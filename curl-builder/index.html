@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cURL Command Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🚀 <span>cURL</span> Command Builder</div>
+    <div class="subtitle">Pilih menu, isi form, salin perintah</div>
+  </header>
+
+  <div class="container">
+    <!-- SIDEBAR MENU -->
+    <aside class="sidebar">
+      <h3>📋 Menu Utama</h3>
+      <button class="menu-btn active" data-menu="basic">🌐 Basic GET</button>
+      <button class="menu-btn" data-menu="download">📥 Download File</button>
+      <button class="menu-btn" data-menu="post-form">📤 POST Form</button>
+      <button class="menu-btn" data-menu="post-json">🧾 POST JSON</button>
+      <button class="menu-btn" data-menu="upload">📁 Upload File</button>
+      <button class="menu-btn" data-menu="auth">🔐 Autentikasi</button>
+      <button class="menu-btn" data-menu="headers">🧩 Custom Header</button>
+      <button class="menu-btn" data-menu="cookie">🍪 Cookie / Session</button>
+      <button class="menu-btn" data-menu="debug">🔍 Debug / Inspect</button>
+      <button class="menu-btn" data-menu="advanced">⚙️ Advanced</button>
+      <button class="menu-btn" data-menu="preset">⚡ Preset Cepat</button>
+
+      <hr />
+      <h3>💾 Riwayat</h3>
+      <div id="historyList" class="history"></div>
+      <button id="clearHistory" class="btn-clear">🗑️ Hapus Riwayat</button>
+    </aside>
+
+    <!-- FORM AREA -->
+    <main class="content">
+      <h2 id="formTitle">🌐 Basic GET Request</h2>
+      <p id="formDesc" class="desc">Mengambil konten dari URL.</p>
+
+      <form id="curlForm"></form>
+
+      <!-- OUTPUT -->
+      <div class="output-header">
+        <h3>📜 Perintah cURL</h3>
+        <div>
+          <button id="copyBtn" class="btn-copy">📋 Copy</button>
+          <button id="clearBtn" class="btn-clear2">🧹 Reset</button>
+        </div>
+      </div>
+      <pre id="output" class="output">curl https://example.com</pre>
+
+      <div class="actions">
+        <button id="saveBtn" class="btn-save">💾 Simpan ke Riwayat</button>
+        <span id="statusMsg" class="status"></span>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <span>Dibuat untuk mempermudah belajar &amp; pakai cURL • 100+ pola perintah</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+                                                                    </html>
